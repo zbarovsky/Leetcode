@@ -7,6 +7,7 @@ var sumZero = function(n) {
     
     for(let i = 1; i < Math.floor(n/2)+1; i++) {
         output.push(i);
+        
         output.push(-i);
     }
     
