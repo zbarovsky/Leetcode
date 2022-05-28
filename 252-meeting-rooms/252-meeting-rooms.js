@@ -8,7 +8,6 @@ var canAttendMeetings = function(intervals) {
     
     for(let i = 0; i < sortedInterval.length - 1; i++) {
         let endTime = sortedInterval[i][1]
-        console.log(endTime)
         let nextStartTime = sortedInterval[i+1][0]
         if(nextStartTime < endTime) {
             return false
