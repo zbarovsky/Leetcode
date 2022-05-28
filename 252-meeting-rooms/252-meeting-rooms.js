@@ -3,20 +3,15 @@
  * @return {boolean}
  */
 var canAttendMeetings = function(intervals) {
+    let sortedInterval = intervals.sort((a, b) => a[0] - b[0])
+    //console.log(sortedInterval)
     
-    for(let i = 0; i < intervals.length; i++) {
-        let startTime = intervals[i][0]
-        let endTime = intervals[i][1]
-        
-        for(let j = i+1; j < intervals.length; j++) {
-            if(intervals[j][0] >= startTime && intervals[j][0] < endTime) {
-                return false
-            }
-            else if(intervals[j][1] > startTime && intervals[j][1] <= endTime) {
-                return false
-            } else if (intervals[j][0] < startTime && intervals[j][1] > endTime) {
-                return false
-            }
+    for(let i = 0; i < sortedInterval.length - 1; i++) {
+        let endTime = sortedInterval[i][1]
+        console.log(endTime)
+        let nextStartTime = sortedInterval[i+1][0]
+        if(nextStartTime < endTime) {
+            return false
         }
     }
     return true
