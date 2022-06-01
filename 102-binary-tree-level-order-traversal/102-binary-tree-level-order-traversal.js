@@ -15,8 +15,7 @@ var levelOrder = function(root) {
     if(!root) {
         return []
     }
-    
-    //let currentNode = root
+
     let queue = []
     let list = []
     
