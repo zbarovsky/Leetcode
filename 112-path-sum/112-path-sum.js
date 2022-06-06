@@ -25,13 +25,11 @@ function traverse(root, sum, target) {
         return false
     }
     
-    sum += root.val
-    
     if(!root.left && !root.right) {
-        return sum == target;
+        return sum + root.val == target;
     }
     
-    
+    sum += root.val
     
     return traverse(root.left, sum, target) || traverse(root.right, sum, target)
 
