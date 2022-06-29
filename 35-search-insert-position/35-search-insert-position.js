@@ -26,8 +26,6 @@ var searchInsert = function(nums, target) {
         }
     }
     
-    //console.log(nums[mid], mid)
-    
     if (nums[mid] < target) {
         return mid += 1
     } else {
