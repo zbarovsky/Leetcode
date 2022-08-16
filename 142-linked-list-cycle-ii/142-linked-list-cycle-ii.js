@@ -13,7 +13,6 @@
 var detectCycle = function(head) {
     
     let cache = new Set();
-    let index = 0;
     
     while(head) {
         
@@ -24,7 +23,6 @@ var detectCycle = function(head) {
         }
         
         head = head.next
-        index++
     }
     return null;
     
