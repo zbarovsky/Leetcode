@@ -13,7 +13,6 @@
 var hasCycle = function(head) {
     
     let cache = new Set();
-    let pointer = head
     
     while(head) {
         
