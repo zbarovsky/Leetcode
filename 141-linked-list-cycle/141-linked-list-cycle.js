@@ -12,10 +12,6 @@
  */
 var hasCycle = function(head) {
     
-    if(!head) {
-        return false
-    }
-    
     let cache = new Set();
     let pointer = head
     
