@@ -29,6 +29,4 @@ var minSetSize = function(arr) {
             return output
         }
     }
-    
-    
 };
