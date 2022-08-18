@@ -5,7 +5,6 @@
 var minSetSize = function(arr) {
     
     let hash = {}
-    let counter = 0;
     let halfArr = arr.length / 2
     let arrLen = arr.length
     let output = 0;
