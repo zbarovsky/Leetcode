@@ -28,6 +28,4 @@ var searchMatrix = function(matrix, target) {
     
     return false
     
-    
-    
 };
