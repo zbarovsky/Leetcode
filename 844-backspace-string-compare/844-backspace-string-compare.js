@@ -24,8 +24,6 @@ var backspaceCompare = function(s, t) {
         }
     }
     
-    console.log(sStack, tStack)
-    
     return JSON.stringify(sStack) == JSON.stringify(tStack)
     
     
