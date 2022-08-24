@@ -4,6 +4,12 @@
  */
 var lengthOfLongestSubstring = function(s) {
     
+    if(s === "") {
+        return 0
+    } else if (s.length <= 1) {
+        return 1
+    }
+    
     let hash = {}
     let count = 0;
     let length = 0;
@@ -28,7 +34,7 @@ var lengthOfLongestSubstring = function(s) {
     }
     
     if(length > count) {
-        count = length
+        return length
     }
     
     return count
