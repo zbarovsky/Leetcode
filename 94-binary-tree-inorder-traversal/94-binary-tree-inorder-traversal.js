@@ -11,6 +11,7 @@
  * @return {number[]}
  */
 var inorderTraversal = function(root) {
+    
     if(!root) {
         return []
     }
