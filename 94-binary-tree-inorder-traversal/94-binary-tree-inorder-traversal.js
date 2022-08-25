@@ -14,21 +14,20 @@ var inorderTraversal = function(root) {
     if(!root) {
         return []
     }
-    return traverse(root, []);
     
+    return traverse(root, [])
 };
 
-function traverse(root, list) {
-    
-    if(root.left) {
-        traverse(root.left, list)
+function traverse(node, list) {
+    if(node.left) {
+        traverse(node.left, list)
     }
     
-    list.push(root.val);
+    list.push(node.val)
     
-    if (root.right) {
-        traverse(root.right, list)
+    if(node.right) {
+        traverse(node.right, list)
     }
     
-    return list;
+    return list
 }
