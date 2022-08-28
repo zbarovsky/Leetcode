@@ -13,9 +13,31 @@
  */
 var searchBST = function(root, val) {
     
-    if(root == null || val == root.val) {
-        return root;
+    if(root === val) {
+        return root
     }
     
-    return val < root.val ? searchBST(root.left, val) : searchBST(root.right, val)
+    let curNode = root
+    let queue = []
+    let list = []
+    
+    queue.push(curNode)
+    
+    while(queue.length > 0) {
+        curNode = queue.shift();
+        if(curNode.val === val) {
+            return curNode
+        }
+        
+        if(curNode.left) {
+            queue.push(curNode.left)
+        }
+        
+        if(curNode.right) {
+            queue.push(curNode.right)
+        }
+    }
+    
+    return null
+    
 };
