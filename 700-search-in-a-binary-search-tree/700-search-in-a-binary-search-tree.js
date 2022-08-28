@@ -19,7 +19,6 @@ var searchBST = function(root, val) {
     
     let curNode = root
     let queue = []
-    let list = []
     
     queue.push(curNode)
     
