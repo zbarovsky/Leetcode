@@ -10,7 +10,6 @@ var removeDigit = function(number, digit) {
         
         if(number[i] == digit) {
             let tString = number.slice(0, i) + number.slice(i+1)
-            
             if(tString > maxOutput) {
                 maxOutput = tString
             }
