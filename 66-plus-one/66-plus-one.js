@@ -12,7 +12,6 @@ var plusOne = function(digits) {
             } else if (digits[i] === 9) {
                 digits[i] = 0
             }
-            
             if(i === 0) {
                 digits.unshift(1)
             }
