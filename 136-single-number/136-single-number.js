@@ -18,4 +18,5 @@ var singleNumber = function(nums) {
             return num
         } 
     }
+    
 };
