@@ -13,10 +13,8 @@ var majorityElement = function(nums) {
         }
     }
     
-    let majority = nums.length / 2
-    
     for(num in hash) {
-        if(hash[num] > majority) {
+        if(hash[num] > (nums.length / 2)) {
             return num
         }
     }
