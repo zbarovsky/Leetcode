@@ -17,5 +17,6 @@ var search = function(nums, target) {
             end--
         }
     }
+    
     return -1
 };
